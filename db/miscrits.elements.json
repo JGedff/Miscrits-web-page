@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "6697978f29c2d2692fa7d831"
+  },
+  "name": "Fuego",
+  "icon": "/img/elements/Fire.png",
+  "doc": "elements"
+},
+{
+  "_id": {
+    "$oid": "669797ac29c2d2692fa7d832"
+  },
+  "name": "Hierba",
+  "icon": "/img/elements/Nature.png",
+  "doc": "elements"
+},
+{
+  "_id": {
+    "$oid": "669797bc29c2d2692fa7d833"
+  },
+  "name": "Tierra",
+  "icon": "/img/elements/Earth.png",
+  "doc": "elements"
+}]

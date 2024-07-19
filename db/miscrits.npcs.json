@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "669797ea29c2d2692fa7d835"
+  },
+  "name": "Forest Explorer",
+  "description": [
+    "El Explorador del Bosque se puede encontrar en el Bosque Miscrian, la ubicación exacta cambiará día a día. El Explorador del Bosque le dirá si hay Miscrits raros en el día actual y aproximadamente dónde se pueden encontrar.",
+    "La Bolsa del Explorador del Bosque siempre se puede encontrar en el suelo cercano y se resalta cuando el cursor pasa sobre ella, sin embargo, hacer clic en la bolsa no hace nada."
+  ],
+  "image": "/img/npcs/Forest_Explorer.png",
+  "doc": "npcs"
+},
+{
+  "_id": {
+    "$oid": "669797fa29c2d2692fa7d836"
+  },
+  "name": "Miscrian Scholar",
+  "description": [
+    "Actualmente se trata de un NPC con un uso desconocido, a excepción de información. Está parado al lado de la capilla y está rodeado de pilares que tienen todos los elementos sobre ellos.",
+    "Cuando derrotes a un Elementum, uno de los pilares se iluminará.  Cuando todos estén iluminados, te llevará a Apollo Nox.  Después de derrotar a Apollo Nox, el VI Miscrian Scholar aparecerá y dirá que uno de los Miscrian Scholars está detrás del entrenamiento mágico de Miscrit, y se quedó allí."
+  ],
+  "image": "/img/npcs/Miscrian_Scholar.png",
+  "doc": "npcs"
+}]

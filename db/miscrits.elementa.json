@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "66979bcb29c2d2692fa7d854"
+  },
+  "name": "Earth elementum",
+  "image": "/img/elementums/Earth.png",
+  "element": {
+    "$oid": "669797bc29c2d2692fa7d833"
+  },
+  "location": {
+    "$oid": "66979d5b29c2d2692fa7d867"
+  },
+  "stats": {
+    "Vida": "+400",
+    "Atq": "Muy alto",
+    "Def": "Moderada",
+    "AtqEspecial": "Alto",
+    "DefEspecial": "Muy alto",
+    "Velocidad": "Muy alta"
+  },
+  "habilities": [
+    "Sinkhole: Ataque extremadamente poderoso, pero es muy probable fallar. Causa 1000 de daño, pero tiene un 25% de precisión.",
+    "Gem strike: Ataque elemental poderoso. Causa +25 de daño y tiene un 90% de precisión.",
+    "Rock smash: Similar a Gem strike, pero és un ataque físico.",
+    "Sacred stones: Aumenta la defensa del usuario."
+  ],
+  "doc": "elementums"
+},
+{
+  "_id": {
+    "$oid": "66979be929c2d2692fa7d855"
+  },
+  "name": "Nature elementum",
+  "image": "/img/elementums/Nature.png",
+  "element": {
+    "$oid": "669797ac29c2d2692fa7d832"
+  },
+  "location": {
+    "$oid": "6697a03829c2d2692fa7d88a"
+  },
+  "stats": {
+    "Vida": "+220",
+    "Atq": "Bajo",
+    "Def": "Muy baja",
+    "AtqEspecial": "Muy alto",
+    "DefEspecial": "Alta",
+    "Velocidad": "Moderada"
+  },
+  "habilities": [
+    "Nature's Sting: Provoca envenenamiento al enemigo durante tres turnos, perdiendo 15 puntos de salud en cada uno.",
+    "Tree Truncate: Causa daño al enemigo, no posee efecto secundario. No puede ser encantado.",
+    "Life: Cura 1000 puntos de salud al usuario.",
+    "Photosynth: Elimina la ventaja del Fuego.",
+    "Nature's Cry: És un ataque más fuerte que los ataques ordinarios."
+  ],
+  "doc": "elementums"
+}]

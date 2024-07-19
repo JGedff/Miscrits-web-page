@@ -1,0 +1,54 @@
+<nav class="navbar navbar-dark navbar-expand-sm border-bottom">
+    <div class="container-fluid">
+        <div>
+            <button class="navbar-toggler bg-dark text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    {{#if inicio}}
+                    <a href="/" class="nav-link fw-bold text-light">Inicio</a>
+                    {{else}}
+                    <a href="/" class="nav-link text-light">Inicio</a>
+                    {{/if}}
+                </li>
+                <li class="nav-item">
+                    {{#if locations}}
+                    <a href="/locations" class="nav-link fw-bold text-light">Lugares</a>
+                    {{else}}
+                    <a href="/locations" class="nav-link text-light">Lugares</a>
+                    {{/if}}
+                </li>
+                <li class="nav-item">
+                    {{#if elements}}
+                    <a href="/elementums" class="nav-link fw-bold text-light">Elementum</a>
+                    {{else}}
+                    <a href="/elementums" class="nav-link text-light">Elementum</a>
+                    {{/if}}
+                </li>
+                <li class="nav-item">
+                    {{#if creatures}}
+                    <a href="/creatures" class="nav-link fw-bold text-light">Criaturas</a>
+                    {{else}}
+                    <a href="/creatures" class="nav-link text-light">Criaturas</a>
+                    {{/if}}
+                </li>
+                <li class="nav-item">
+                    {{#if npcs}}
+                    <a href="/npcs" class="nav-link fw-bold text-light">NPCs</a>
+                    {{else}}
+                    <a href="/npcs" class="nav-link text-light">NPCs</a>
+                    {{/if}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "669928a8e3f2302c3f99c801"
+  },
+  "name": "Sunfall Kingdom",
+  "locations": [
+    {
+      "$oid": "66979d5b29c2d2692fa7d867"
+    },
+    {
+      "$oid": "6697a03829c2d2692fa7d88a"
+    }
+  ],
+  "doc": "kingdoms"
+}]

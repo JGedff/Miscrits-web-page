@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "66979d5b29c2d2692fa7d867"
+  },
+  "name": "Miscrian Forest",
+  "image": "/img/locations/MiscrianForest.png",
+  "kingdom": {
+    "$oid": "66979fc229c2d2692fa7d884"
+  },
+  "areas": [
+    {
+      "$oid": "669a20ddbddcc90804abe454"
+    },
+    {
+      "$oid": "669a2129bddcc90804abe45b"
+    },
+    {
+      "$oid": "669a2157bddcc90804abe460"
+    },
+    {
+      "$oid": "669a2189bddcc90804abe465"
+    }
+  ],
+  "doc": "locations"
+},
+{
+  "_id": {
+    "$oid": "6697a03829c2d2692fa7d88a"
+  },
+  "name": "Mount Gemma",
+  "image": "/img/locations/MountGemma.png",
+  "kingdom": {
+    "$oid": "66979fc229c2d2692fa7d884"
+  },
+  "areas": [
+    {
+      "$oid": "669a21b9bddcc90804abe469"
+    },
+    {
+      "$oid": "669a21e5bddcc90804abe46d"
+    },
+    {
+      "$oid": "669a220cbddcc90804abe471"
+    },
+    {
+      "$oid": "669a2239bddcc90804abe475"
+    }
+  ],
+  "doc": "locations"
+}]

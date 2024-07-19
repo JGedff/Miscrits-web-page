@@ -1,0 +1,35 @@
+<div class="mt-5">
+    <table class="table table-success table-hover">
+        <thead>
+            <tr>
+                <th class="top-left-radius">Nombre</th>
+                <th>Imagen</th>
+                <th>Elemento</th>
+                <th class="top-right-radius">Ubicación</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            {{#each items}}
+            <tr>
+                {{#if @last}}
+                <th class="bottom-left-radius"><a href='/{{this.doc}}/{{this.id}}'>{{this.name}}</a></th>
+                <td><a href='/{{this.doc}}/{{this.id}}'><img class="rounded" src={{this.image}} alt={{this.name}}></a>
+                </td>
+                <td>{{this.element.name}} <br /> <img class="rounded" src={{this.element.icon}}
+                        alt={{this.element.name}}>
+                </td>
+                <td class="bottom-right-radius">{{this.location.name}}</td>
+                {{else}}
+                <th><a href='/{{this.doc}}/{{this.id}}'>{{this.name}}</a></th>
+                <td><a href='/{{this.doc}}/{{this.id}}'><img class="rounded" src={{this.image}} alt={{this.name}}></a>
+                </td>
+                <td>{{this.element.name}} <br /> <img class="rounded" src={{this.element.icon}}
+                        alt={{this.element.name}}>
+                </td>
+                <td>{{this.location.name}}</td>
+                {{/if}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

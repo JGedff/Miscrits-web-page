@@ -1,0 +1,32 @@
+<table class="table table-success">
+    <thead>
+        <tr>
+            {{#each items}}
+            {{#if (condition @first '&&' @last)}}
+            <th class="top-right-radius top-left-radius">{{@key}}</th>
+            {{else if @first}}
+            <th class="top-left-radius">{{@key}}</th>
+            {{else if @last}}
+            <th class="top-right-radius">{{@key}}</th>
+            {{else}}
+            <th>{{@key}}</th>
+            {{/if}}
+            {{/each}}
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        <tr>
+            {{#each items}}
+            {{#if (condition @first '&&' @last)}}
+            <td class="bottom-right-radius bottom-left-radius">{{this}}</td>
+            {{else if @first}}
+            <td class="bottom-left-radius">{{this}}</td>
+            {{else if @last}}
+            <td class="bottom-right-radius">{{this}}</td>
+            {{else}}
+            <td>{{this}}</td>
+            {{/if}}
+            {{/each}}
+        </tr>
+    </tbody>
+</table>

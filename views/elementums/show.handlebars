@@ -1,0 +1,33 @@
+<a href="/elementums" class="btn mb-2">Volver</a>
+
+{{#if (condition element '!=' null)}}
+<div class="d-flex pt-2">
+    <h3 class="d-flex align-items-center">{{element.name}}</h3>
+    <img class="ms-3 rounded" src={{element.element.icon}} alt={{element.element.name}}>
+</div>
+
+<div class="d-flex justify-content-center">
+    <img class="rounded" src={{element.image}} alt={{element.name}}>
+</div>
+
+<div>
+    <h4>Ubicación:</h4>
+    <p><b>{{element.location.name}}</b></p>
+</div>
+
+<div>
+    <h4>Estadísticas:</h4>
+
+    {{> objectTable items=element.stats}}
+</div>
+
+<div>
+    <h4>Habilidades:</h4>
+
+    {{> arrayTable header='Habilidades / Ataques' items=element.habilities}}
+</div>
+{{else}}
+<div>
+    <h4>Este elementum no existe</h4>
+</div>
+{{/if}}

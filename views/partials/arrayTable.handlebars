@@ -1,0 +1,18 @@
+<table class="table table-success">
+    <thead>
+        <tr>
+            <th class="top-right-radius top-left-radius">{{header}}</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {{#each items}}
+        <tr>
+            {{#if @last}}
+            <td class="bottom-right-radius bottom-left-radius">{{this}}</td>
+            {{else}}
+            <td>{{this}}</td>
+            {{/if}}
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

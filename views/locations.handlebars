@@ -1,0 +1,31 @@
+<h2 class="fw-bold title">Ubicaciones</h2>
+
+{{#each kingdoms}}
+<h3 class="mt-5">{{this.name}}</h3>
+
+<table class="table table-success">
+    <thead>
+        <tr>
+            <th class="top-left-radius">Nombre</th>
+            <th class="top-right-radius">Imagen</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        {{#each this.locations as |location|}}
+        {{#if @last}}
+        <tr>
+            <th class="bottom-left-radius"><a href="/locations/{{location.id}}">{{location.name}}</a></th>
+            <td class="bottom-right-radius"><a href="/locations/{{location.id}}"><img class="rounded"
+                        src={{location.image}} alt={{location.name}}></a></td>
+        </tr>
+        {{else}}
+        <tr>
+            <th><a href="/locations/{{location.id}}">{{location.name}}</a></th>
+            <td><a href="/locations/{{location.id}}"><img class="rounded" src={{location.image}}
+                        alt={{location.name}}></a></td>
+        </tr>
+        {{/if}}
+        {{/each}}
+    </tbody>
+</table>
+{{/each}}

@@ -1,0 +1,17 @@
+<a href="/npcs" class="btn mb-2">Volver</a>
+
+{{#if (condition npc '!=' null)}}
+<h3>{{npc.name}}</h3>
+
+{{#each npc.description}}
+<p>{{this}}</p>
+{{/each}}
+
+<div class="d-flex justify-content-center">
+    <img class="rounded" src={{npc.image}} alt={{npc.name}}>
+</div>
+{{else}}
+<div>
+    <h4>Este NPC no existe</h4>
+</div>
+{{/if}}

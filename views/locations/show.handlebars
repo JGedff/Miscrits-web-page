@@ -1,0 +1,35 @@
+<a href="/locations" class="btn mb-2">Volver</a>
+
+{{#if (condition location '!=' null)}}
+<h3>{{location.name}}</h3>
+
+<div class="d-flex justify-content-center">
+    <img class="rounded" src={{location.image}} alt={{location.name}}>
+</div>
+
+<div>
+    <h4>Reino:</h4>
+    <p><b>{{location.kingdom}}</b></p>
+</div>
+
+<div>
+    <h4 class="mb-3">Areas:</h4>
+
+    {{#each location.areas}}
+    <h5>Area {{inc @index}}:</h5>
+    <p><b>Miscrits:</b></p>
+    {{> imageTable doc="creatures" items=this.miscrits}}
+
+    <p><b>Jeffe:</b></p>
+    {{#if this.boss}}
+    <p>{{this.boss}}</p>
+    {{else}}
+    <p><b>No hay jeffe en esta area</b></p>
+    {{/if}}
+    {{/each}}
+</div>
+{{else}}
+<div>
+    <h4>Esta ubicación no existe</h4>
+</div>
+{{/if}}

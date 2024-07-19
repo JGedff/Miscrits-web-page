@@ -1,0 +1,88 @@
+[{
+  "_id": {
+    "$oid": "66979b4929c2d2692fa7d851"
+  },
+  "name": "Dark Flue",
+  "image": "/img/creatures/Dark_Flue.png",
+  "description": "Una oscuridad se arrastra sobre la tierra. Los celos de la humanidad y la codicia por el poder de Miscrits han provocado el nacimiento de este Dark Miscrit.",
+  "location": {
+    "$oid": "66979d5b29c2d2692fa7d867"
+  },
+  "rarity": "Raro",
+  "element": {
+    "$oid": "6697978f29c2d2692fa7d831"
+  },
+  "stats": {
+    "Vida": "Alta",
+    "Atq": "Muy alto",
+    "Def": "Alta",
+    "AtqEspecial": "Moderado",
+    "DefEspecial": "Moderada",
+    "Velocidad": "Moderada"
+  },
+  "skills": [
+    {
+      "Nombre": "Burn",
+      "Poder": "7",
+      "Precision": "100%",
+      "Objetivo": "Enemigo",
+      "Efecto": "Daño",
+      "Elemento": "Fuego",
+      "Nivel": "1"
+    },
+    {
+      "Nombre": "Power Up",
+      "Poder": "0",
+      "Precision": "100%",
+      "Objetivo": "Amigo",
+      "Efecto": "Ataque físico y elemental +5",
+      "Elemento": "Físico",
+      "Nivel": "1"
+    }
+  ],
+  "doc": "creatures"
+},
+{
+  "_id": {
+    "$oid": "66979b8a29c2d2692fa7d852"
+  },
+  "name": "Sparkupine",
+  "image": "/img/creatures/Sparkupine.png",
+  "description": "A menudo se pueden ver manadas de Sparkupines apiñadas por la noche, porque ninguna otra criatura es capaz de resistir sus agujas de fuego sin sufrir lesiones.",
+  "location": {
+    "$oid": "66979d5b29c2d2692fa7d867"
+  },
+  "rarity": "Común",
+  "element": {
+    "$oid": "6697978f29c2d2692fa7d831"
+  },
+  "stats": {
+    "Vida": "Moderada",
+    "Atq": "Alto",
+    "Def": "Muy alta",
+    "AtqEspecial": "Moderado",
+    "DefEspecial": "Moderada",
+    "Velocidad": "Muy baja"
+  },
+  "skills": [
+    {
+      "Nombre": "Burn",
+      "Poder": "7",
+      "Precision": "100%",
+      "Objetivo": "Enemigo",
+      "Efecto": "Daño",
+      "Elemento": "Fuego",
+      "Nivel": "1"
+    },
+    {
+      "Nombre": "Power Up",
+      "Poder": "0",
+      "Precision": "100%",
+      "Objetivo": "Amigo",
+      "Efecto": "Ataque físico y elemental +5",
+      "Elemento": "Físico",
+      "Nivel": "1"
+    }
+  ],
+  "doc": "creatures"
+}]
