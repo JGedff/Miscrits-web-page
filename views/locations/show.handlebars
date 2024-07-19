@@ -13,18 +13,18 @@
 </div>
 
 <div>
-    <h4 class="mb-3">Areas:</h4>
+    <h4 class="mb-3">Áreas:</h4>
 
     {{#each location.areas}}
-    <h5>Area {{inc @index}}:</h5>
+    <h5>Área {{inc @index}}:</h5>
     <p><b>Miscrits:</b></p>
     {{> imageTable doc="creatures" items=this.miscrits}}
 
-    <p><b>Jeffe:</b></p>
+    <p><b>Jefe:</b></p>
     {{#if this.boss}}
     <p>{{this.boss}}</p>
     {{else}}
-    <p><b>No hay jeffe en esta area</b></p>
+    <p><b>No hay jefe en esta área</b></p>
     {{/if}}
     {{/each}}
 </div>
