@@ -29,7 +29,7 @@ const show = (req: Request, res: Response): void => {
     .catch((err: any) => {
       console.log(err)
       res.statusCode = 404
-      res.render('errors/notFound', { npcs: true })
+      res.render('npcs/show', { npcs: true, npc: null })
     })
 }
 

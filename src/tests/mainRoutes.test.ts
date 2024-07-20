@@ -9,7 +9,7 @@ describe('Test main routes', () => {
   ${'/elementums'}  | ${'Elementum'}
   ${'/creatures'}   | ${'Criaturas'}
   ${'/npcs'}        | ${'NPCs'}
-  ${'/unknown'}     | ${'Pagina no encontrada'}
+  ${'/unknown'}     | ${'Página no encontrada'}
   `('verifies that the route "$page" has the title "$title"', async ({ page, title }: { page: string, title: string }) => {
     const res = await request(app).get(page)
     expect(res.text).toContain(title)

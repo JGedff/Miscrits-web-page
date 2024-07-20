@@ -36,7 +36,7 @@ const show = (req: Request, res: Response): void => {
     .catch((err: any) => {
       console.log(err)
       res.statusCode = 404
-      res.render('errors/notFound', { locations: true })
+      res.render('locations/show', { locations: true, location: null })
     })
 }
 

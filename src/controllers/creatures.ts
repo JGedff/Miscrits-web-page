@@ -38,7 +38,7 @@ const show = (req: Request, res: Response): void => {
     .catch((err: any) => {
       console.log(err)
       res.statusCode = 404
-      res.render('errors/notFound', { creatures: true })
+      res.render('creatures/show', { creatures: true, miscrit: null })
     })
 }
 
