@@ -17,6 +17,7 @@ const all = (req: Request, res: Response): void => {
 
 const show = (req: Request, res: Response): void => {
   Location.findById(req.params.location)
+    .populate('kingdom')
     .populate({
       path: 'areas',
       populate: {
@@ -25,6 +26,7 @@ const show = (req: Request, res: Response): void => {
       }
     })
     .then((location: any) => {
+      console.log(location)
       if (location != null) {
         res.statusCode = 200
         res.render('locations/show', { locations: true, location })
